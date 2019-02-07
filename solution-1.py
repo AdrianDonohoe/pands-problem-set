@@ -8,23 +8,33 @@
 # 55
 
 # declare variables needed
-i = 0
+number = 0
 ans = 0
 
 # Request user to input a postive integer
 # learned this from https://stackoverflow.com/questions/70797/user-input-and-command-line-arguments
-
-i = input("Please enter a positive integer: ")
+# input reads in as a string so the int() function is necessary
+number = int(input("Please enter a positive integer: "))
 
 # TBD
-#  Test is positive, test is string and ask again if doesnt fit criteria
-print("You entered ", i )
+#  Test is positive, test is string and ask again if doesn't fit criteria
+print("You entered ", number )
 
 # TBD
 # Do the arithmetic
 
-# Print the answer
+#make a list and extend to from number to 1 
+l = [number]
+l.extend(range(number - 1, 0, -1))
 
-print("The sum of all numbers between 1 and ", i , "is :")
+for i in range(0, len(l)):
+    ans += l[i]
+    
+print("Sum of all numbers between 1 and ", number , " is : ", ans)
 
-print(ans)
+    
+
+
+#print("The sum of all numbers between 1 and ", number , "is :")
+
+#print(ans)
