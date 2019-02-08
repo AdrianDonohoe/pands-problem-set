@@ -16,23 +16,21 @@ ans = 0
 # input reads in as a string so the int() function is necessary
 number = int(input("Please enter a positive integer: "))
 
-# Need to change this to a while loop
-if  (number > 20000000) or (number < 0) :
+# This while loop checks if the number is postivie and less than 20000001
+while  (number > 20000000) or (number < 0) :
     number = int(input("Please enter a positive number less than 20,000,000 (PC may crash with big numbers) : "))
 
 
 
-    print("You entered ", number )
+#  print("You entered ", number )
 
 
     
 #make a list and extend backwards from number to 1 
-    l = [number]
-    l.extend(range(number - 1, 0, -1))
+l = [number]
+l.extend(range(number - 1, 0, -1))
 
-    for i in range(0, len(l)):
-        ans += l[i]
+for i in range(0, len(l)):
+    ans += l[i]
     
-    print("Sum of all numbers between 1 and ", number , " is : ", ans)
-
-
+print("Sum of all numbers between 1 and ", number , " is : ", ans)
