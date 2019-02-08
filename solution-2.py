@@ -16,11 +16,17 @@ import datetime
 # assign day of the week in number to tday Mon=0, Tues=1 ....
 tday = datetime.datetime.today().weekday()
 
-# print(tday)
-
 # Create a dictionary of days of the week
 alldays = { 0: 'Monday', 1: 'Tuesday', 2 : 'Wednesday', 3: 'Thursday', 4 : 'Friday', 5 : 'Saturday', 6 : 'Sunday'}
 
+# Create a string s for today 
+s=alldays[tday]
+
+# Check if first character of the today string begins with a T, then print something and if not, print something else
+if s[0] == 'T':
+    print('Yes - today begins with a T.')
+else:
+    print('No - today does not begin with a T.')
 
 
 
