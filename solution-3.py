@@ -11,7 +11,7 @@
 # etc
 # 9990
 
-for i in range(1000,10001):
-    if i % 6 == 0 and i % 12 != 0 :
+for i in range(1000,10001):     # loop over range 1000 -> 10000
+    if i % 6 == 0 and i % 12 != 0 :      # if divisble by 6 and not divisible by 12, then print
         print(i)
 
