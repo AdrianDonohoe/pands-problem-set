@@ -12,15 +12,16 @@
 
 num = input("Please enter any positive integer: ")
 
-while not num.isnumeric() or int(num) < 0 :      # re-used code from solution 1
+while not num.isnumeric() or int(num) < 0 :      # re-used code from solution 1, check if a positive number
     num = input("Please enter any positive integer: ")
 
 num = int(num)
+print(num)
 
 while num != 1:
-    if num % 2 == 0:
+    if num % 2 == 0:     # if even divide by and print
         num /= 2
         print(int(num))
     else :
-        num = num * 3 + 1
+        num = num * 3 + 1  # else if odd multiply by 3 and add 1, then print
         print(int(num))
