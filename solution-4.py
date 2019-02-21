@@ -1,3 +1,4 @@
+# Created by Adrian Donohoe 15th February 2019
 # Solution to 2019 problem 4
 
 # Task
@@ -12,16 +13,16 @@
 
 num = input("Please enter any positive integer: ")
 
-while not num.isnumeric() or int(num) < 0 :      # re-used code from solution 1, check if a positive number
+while not num.isnumeric() or int(num) < 0 :      # Adapted code from solution 1, while input is not numeric or not a positive number , keep asking for input
     num = input("Please enter any positive integer: ")
 
-num = int(num)
+num = int(num)  # make num an integer as input() returns a string
 print(num)
 
-while num != 1:
-    if num % 2 == 0:     # if even divide by and print
-        num /= 2
-        print(int(num))
-    else :
-        num = num * 3 + 1  # else if odd multiply by 3 and add 1, then print
-        print(int(num))
+while num != 1:   # while num is not equal to one
+    if num % 2 == 0:     # if num is even
+        num /= 2      # num is assigned num divided by 2, equivalent to num = num / 2
+        print(int(num))  # for some reason floats were getting printed
+    else :    # else ifnum is odd 
+        num = num * 3 + 1  # num is assigned num multiplied by 3 and add 1, then print
+        print(int(num))  # for some reason floats were getting printed

@@ -1,3 +1,4 @@
+# Created by Adrian Donohoe 8th February 2019
 # Solution to 2019 problem 2
 
 # Task
@@ -10,16 +11,14 @@
 # $ python begins-with-t.py
 # No - today does not begin with a T.
 
-# we learned this in an earlier example
+# Adapted from week 2 lecture
 import datetime
+tday = datetime.datetime.today().weekday() # assign day of the week in number to tday Mon=0, Tues=1 ....
 
-# assign day of the week in number to tday Mon=0, Tues=1 ....
-tday = datetime.datetime.today().weekday()
-
-# Create a dictionary of days of the week
+# Create a dictionary of days of the week, Adapted from Python tutorial https://docs.python.org/3/tutorial/datastructures.html#dictionaries
 alldays = { 0: 'Monday', 1: 'Tuesday', 2 : 'Wednesday', 3: 'Thursday', 4 : 'Friday', 5 : 'Saturday', 6 : 'Sunday'}
 
-# Create a string s for today 
+# Create a string s for today by accessing dictionary alldays at key tday
 s=alldays[tday]
 
 # Check if first character of the today string begins with a T, then print something and if not, print something else
