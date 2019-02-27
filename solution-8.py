@@ -7,3 +7,26 @@
 # 10th 2019 at 1:15pm”.
 # $ python datetime.py
 # Monday, January 10th 2019 at 1:15pm
+
+
+
+
+# Adapted from week 6 lesson
+import datetime as dt
+
+# Will make 3 separate strings then concatanate and print at the end.
+str1 = dt.datetime.strftime(dt.datetime.now(), '%A, %B ') # Get the day and month and put in string
+
+# Get date, strip the zero and append the approriate 
+str2 = dt.datetime.strftime(dt.datetime.now(), '%d ' )
+str2 = str2.replace(' 0','')
+
+
+# Adapted from https://stackoverflow.com/a/9526003
+str3 = dt.datetime.strftime(dt.datetime.now(), '%Y at %I:%M%p' )
+str3 = str3.replace('PM','pm').replace('AM','am').replace(' 0',' ')
+
+print(str1)
+print(str2)
+print(str3)
+print(str1 + str2 + str3)
