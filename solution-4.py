@@ -17,7 +17,7 @@ while not num.isnumeric() or int(num) < 0 :      # Adapted code from solution 1,
     num = input("Please enter any positive integer: ")
 
 num = int(num)  # make num an integer as input() returns a string
-print(num, end=' ') # added end so that prints on same line
+print(num, end=' ')  # added end so that prints on same line
 
 while num != 1:   # while num is not equal to one
     if num % 2 == 0:     # if num is even
