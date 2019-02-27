@@ -14,5 +14,5 @@ s1 = input("Please enter a sentence: ")
 # split string into list  , adapted from https://docs.python.org/3/library/stdtypes.html?highlight=str%20split#str.split
 l = s1.split()
 
-for i in range(len(l)):  # loop over the list and print
+for i in range(0,len(l),2):  # loop over the list and print
     print(l[i], end=' ')
