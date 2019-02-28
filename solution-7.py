@@ -8,3 +8,12 @@
 # $ python squareroot.py
 # Please enter a positive number: 14.5
 # The square root of 14.5 is approx. 3.8.
+
+import math as m
+
+num = input("Please enter any positive number: ")
+
+while float(num) < 0:      # Adapted code from solution 1, while input is not numeric or not a positive number , keep asking for input
+    num = input("Please enter any positive number: ")
+
+print(m.sqrt(float(num)))
