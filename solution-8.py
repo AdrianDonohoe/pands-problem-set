@@ -23,10 +23,12 @@ str2 = str2.replace(' 0','')
 
 
 # Adapted from https://stackoverflow.com/a/9526003
-str3 = dt.datetime.strftime(dt.datetime.now(), '%Y at %I:%M%p' )
+str3 = dt.datetime.strftime(dt.datetime.now(), ' %Y at %I:%M%p' )
 str3 = str3.replace('PM','pm').replace('AM','am').replace(' 0',' ')
 
-print(str1)
-print(str2)
-print(str3)
+# Adapted from https://stackoverflow.com/a/36977549. This works but I dont know how the lambda function works.
+suf = lambda n: "%d%s"%(n,{1:"st",2:"nd",3:"rd"}.get(n if n<20 else n%10,"th"))
+str2 = suf(int(str2))
+
+
 print(str1 + str2 + str3)
