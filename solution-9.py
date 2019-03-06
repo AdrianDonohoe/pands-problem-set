@@ -5,3 +5,8 @@
 
 # Write a program that reads in a text file and outputs every second line.
 
+with open('numbers.txt','r') as f:
+    l = list(f)
+
+for i in range(0,len(l),2):
+    print(l[i],end='')
