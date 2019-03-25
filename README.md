@@ -65,3 +65,6 @@ Usage:
 λ python solution-5.py
 
 Asks the user to input a positive integer and tells the user whether or not the number is a prime.
+
+
+And finally,if you have made it this far, I really enjoyed the module :thumbsup:
