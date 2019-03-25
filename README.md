@@ -1,5 +1,17 @@
 # pands-problem-set
 
+This repository contains my solutions to the 2019 Problem Set for the Programming and Scripting at GMIT.
+
+[See instructions here](https://github.com/ianmcloughlin/problems-pands-2019/raw/master/problems.pdf)
+
+## How to download this repository
+
+1. Go to [GitHub] (https://github.com/AdrianDonohoe/pands-problem-set)  
+
+2. Click the download button.
+
+## File contents
+
 #solution-1.py
 
 This is my solution to problem 1 for the Programing and Scripting problem set for 2019.
