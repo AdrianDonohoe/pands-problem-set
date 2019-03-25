@@ -6,7 +6,7 @@ This repository contains my solutions to the 2019 Problem Set for the Programmin
 
 ## How to download this repository
 
-1. Go to [GitHub] (https://github.com/AdrianDonohoe/pands-problem-set)  
+1. Go to [GitHub](https://github.com/AdrianDonohoe/pands-problem-set)  
 
 2. Click the download button.
 
