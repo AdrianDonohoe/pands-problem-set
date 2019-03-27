@@ -117,5 +117,6 @@ Usage:
 
 A program that displays a plot of the functions x, x**2  and 2x in the range [0, 4].
 
+![Plots](plots.png)
 
 And finally, if you have made it this far, I really enjoyed the module. Thanks  :thumbsup:
