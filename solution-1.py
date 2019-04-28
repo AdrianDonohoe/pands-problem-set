@@ -1,6 +1,6 @@
 # Created by Adrian Donohoe 7th February 2019
 # Solution to 2019 problem 1
-
+# test
 # Task
 # Write a program that takes any positive integer and outputs the sum of all numbers
 # between 1 and that number.
